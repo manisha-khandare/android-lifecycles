@@ -44,6 +44,7 @@ public class SavedStateActivity extends AppCompatActivity {
         mSavedStateViewModel = new ViewModelProvider(this).get(SavedStateViewModel.class);
 
         // Show the ViewModel property's value in a TextView
+
         mSavedStateViewModel.getName().observe(this, new Observer<String>() {
             @Override
             public void onChanged(String savedString) {
